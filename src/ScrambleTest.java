@@ -27,7 +27,7 @@ class ScrambleTest {
 
         String[] wordArray = {"TAN", "ABRACADABRA", "WHOA", "APPLE", "EGGS"};
         List<String> wordList = new LinkedList<>(Arrays.asList(wordArray));
-        Scramble.scrambleOrRemove(wordList);
+        wordList = Scramble.scrambleOrRemove(wordList);
         assertEquals(3, wordList.size());
         assertEquals("TNA", wordList.get(0));
         assertEquals("BARCADABARA", wordList.get(1));
